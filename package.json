@@ -7,7 +7,8 @@
     "posttest": "eslint .",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "test": "nyc mocha --timeout=30000 test.js",
-    "release": "bin/cli.js"
+    "release": "bin/cli.js",
+    "preinstall": "cd conventional-changelog && lerna bootstrap"
   },
   "nyc": {
     "exclude": [
@@ -39,9 +40,9 @@
   "homepage": "https://github.com/conventional-changelog/standard-version#readme",
   "dependencies": {
     "chalk": "2.4.2",
-    "conventional-changelog": "3.1.10",
-    "conventional-changelog-config-spec": "2.0.0",
-    "conventional-recommended-bump": "6.0.0",
+    "conventional-changelog": "file:conventional-changelog/packages/conventional-changelog",
+    "conventional-changelog-config-spec": "file:conventional-changelog-config-spec",
+    "conventional-recommended-bump": "file:conventional-changelog/packages/conventional-recommended-bump",
     "detect-indent": "6.0.0",
     "detect-newline": "3.0.0",
     "dotgitignore": "2.1.0",

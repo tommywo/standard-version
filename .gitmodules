@@ -1,0 +1,6 @@
+[submodule "conventional-changelog"]
+	path = conventional-changelog
+	url = git@github.com:tommywo/conventional-changelog.git
+[submodule "conventional-changelog-config-spec"]
+	path = conventional-changelog-config-spec
+	url = git@github.com:tommywo/conventional-changelog-config-spec.git
